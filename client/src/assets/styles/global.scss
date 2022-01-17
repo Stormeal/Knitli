@@ -1,0 +1,16 @@
+// global
+@import "../styles/flexbox.scss";
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+
+$base-color: #00cdcd;
+$base-white: #fff;
+
+h1 {
+  font-family: "Balsamiq Sans";
+  font-weight: 600;
+}
+
+.container {
+  padding-left: 15%;
+  padding-right: 15%;
+}

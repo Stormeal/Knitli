@@ -17,9 +17,10 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatButton, MatButtonModule } from '@angular/material/button';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NetworkInterceptor } from './network.interceptor';
+import { HeaderComponent } from './home/header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ComponentsComponent],
+  declarations: [AppComponent, HomeComponent, ComponentsComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

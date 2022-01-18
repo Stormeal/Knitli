@@ -1,6 +1,7 @@
 // global
 @import "../styles/flexbox.scss";
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 $base-color: #00cdcd;
 $base-white: #fff;
@@ -8,6 +9,10 @@ $base-white: #fff;
 h1 {
   font-family: "Balsamiq Sans";
   font-weight: 600;
+}
+
+p {
+  font-family: "Lato", sans-serif;
 }
 
 .container {

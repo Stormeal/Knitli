@@ -1,0 +1,56 @@
+@import "../../../assets/styles/global.scss";
+
+a {
+  text-decoration: inherit;
+  color: $base-white;
+  font-size: 15px;
+}
+
+.navbar {
+  background-color: #00cdcd;
+  max-height: 64px;
+  min-height: 64px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.navbar-brand {
+  height: 100%;
+}
+
+.knitli-logo {
+  color: $base-white;
+  height: 50px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper {
+  width: 100%;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.logo-text-wrapper {
+  padding-left: 10px;
+  line-height: 50px;
+  color: $base-white;
+  font-family: "Balsamiq Sans";
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+.menu-wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+}

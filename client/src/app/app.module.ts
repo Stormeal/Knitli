@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // MODULES
@@ -18,9 +18,18 @@ import { MatButton, MatButtonModule } from '@angular/material/button';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NetworkInterceptor } from './network.interceptor';
 import { HeaderComponent } from './home/header/header.component';
+import { BoxesComponent } from './home/boxes/boxes.component';
+import { NavigationComponent } from './home/navigation/navigation.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ComponentsComponent, HeaderComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    ComponentsComponent,
+    HeaderComponent,
+    BoxesComponent,
+    NavigationComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -35,5 +44,6 @@ import { HeaderComponent } from './home/header/header.component';
     { provide: HTTP_INTERCEPTORS, useClass: NetworkInterceptor, multi: true },
   ],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}

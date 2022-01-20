@@ -1,0 +1,70 @@
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    margin: 0 !important;
+    font-size: 18px !important;
+    line-height: 12px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+    line-height: 14px !important;
+  }
+
+  .menu-wrapper a:not(:last-child) {
+    display: none;
+  }
+
+  .box-section {
+    height: 25vh !important;
+    gap: 10px !important;
+  }
+
+  .box-icon {
+    padding: 10px;
+  }
+
+  .icon {
+    font-size: 200%;
+  }
+
+  .text-wrapper {
+    width: 90% !important;
+  }
+}
+/* tablets/desktops and up ———– */
+@media (min-width: 992px) and (max-width: 1199px) {
+  p {
+    font-size: 16px !important;
+    line-height: 16px !important;
+  }
+
+  .navbar a:last-child {
+    display: none;
+  }
+
+  .box-section {
+    height: 30vh !important;
+  }
+
+  .icon {
+    font-size: 300%;
+  }
+
+  .text-wrapper {
+    width: 80% !important;
+  }
+}
+/* large desktops and up ———– */
+@media screen and (min-width: 1200px) {
+  .navbar a:last-child {
+    display: none;
+  }
+
+  .icon {
+    font-size: 400%;
+  }
+}

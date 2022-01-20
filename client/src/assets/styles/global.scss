@@ -1,4 +1,4 @@
-// global
+@import "../styles/queries.scss";
 @import "../styles/flexbox.scss";
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
@@ -16,9 +16,16 @@ $dark: #343a40;
 $seconday: #6c757d;
 $light: #f8f9fa;
 
+@media screen and (max-width: 992px) {
+}
+
 h1 {
   font-family: "Balsamiq Sans";
   font-weight: 600;
+}
+
+h2 {
+  margin: 0;
 }
 
 p {
@@ -45,5 +52,27 @@ p {
   .container {
     padding-left: 10%;
     padding-right: 10%;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBack {
+  0% {
+    transform: translateZ(100);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
   }
 }

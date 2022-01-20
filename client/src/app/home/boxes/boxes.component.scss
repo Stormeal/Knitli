@@ -1,8 +1,9 @@
 @import "../../../assets/styles/global.scss";
 
-h1 {
+h2 {
   font-family: "Lato", sans-serif;
   color: $base-white;
+  font-weight: 600;
   font-size: 24px;
   line-height: 24px;
 }
@@ -15,11 +16,12 @@ p {
 }
 
 .box-section {
-  padding: 100px 0px;
+  padding: 70px 0px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 40vh;
+  gap: 25px;
 }
 
 .box-icon {
@@ -30,6 +32,7 @@ p {
 
 .icon {
   color: $base-color;
+  transition: 0.3s;
 }
 
 .title-wrapper {
@@ -52,5 +55,26 @@ p {
   height: 100%;
   max-height: 350px;
   width: 100%;
-  margin: 10px;
+  animation: 2s ease-in 0s 1 slideInFromBack;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.secondSection {
+  animation-delay: 1s;
+}
+
+.thirdSection {
+  animation-delay: 2s;
+}
+
+.firstSection:hover .box-icon .icon {
+  color: $base-color-offset;
+}
+
+.secondSection:hover .box-icon .icon {
+  color: $base-color-offset;
+}
+
+.thirdSection:hover .box-icon .icon {
+  color: $base-color-offset;
 }

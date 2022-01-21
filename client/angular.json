@@ -34,6 +34,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/aos/dist/aos.css",
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],

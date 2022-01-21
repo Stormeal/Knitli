@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faMagic, faGem, faRocket } from '@fortawesome/free-solid-svg-icons';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-boxes',
@@ -13,5 +14,7 @@ export class BoxesComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    AOS.init();
+  }
 }

@@ -12,7 +12,7 @@
             <div class="logo-text-wrapper">Knitli</div>
           </div>
         </div>
-        <div class="menu-wrapper">
+        <div class="menu-wrapper" #myTarget>
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Features</a>
@@ -21,10 +21,25 @@
           <a href="#">News</a>
           <a href="#">Contact</a>
           <a>
-            <fa-icon [icon]="faBars" class="menu-icon"></fa-icon>
+            <fa-icon
+              [icon]="faBars"
+              class="menu-icon"
+              (click)="toggleMenu($event)"
+            ></fa-icon>
           </a>
         </div>
       </div>
     </div>
   </nav>
+  <ng-container *ngIf="menuHidden">
+    <div class="container hiddenMenuWrapper">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Features</a>
+      <a href="#">Screenshots</a>
+      <a href="#">Team</a>
+      <a href="#">News</a>
+      <a href="#">Contact</a>
+    </div>
+  </ng-container>
 </header>

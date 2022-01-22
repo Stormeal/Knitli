@@ -32,11 +32,6 @@ p {
   font-family: "Lato", sans-serif;
 }
 
-.container {
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
 .row {
   display: flex; /* equal height of the children */
 }
@@ -46,13 +41,6 @@ p {
 
   padding: 1em;
   border: solid;
-}
-
-@media (min-width: 1200px) {
-  .container {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
 }
 
 @keyframes slideInFromRight {

@@ -20,6 +20,7 @@ import { NetworkInterceptor } from './network.interceptor';
 import { HeaderComponent } from './home/header/header.component';
 import { BoxesComponent } from './home/boxes/boxes.component';
 import { NavigationComponent } from './home/navigation/navigation.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { NavigationComponent } from './home/navigation/navigation.component';
     HeaderComponent,
     BoxesComponent,
     NavigationComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

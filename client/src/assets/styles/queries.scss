@@ -1,5 +1,12 @@
 /* Extra small devices (phones, up to 480px) */
 @media screen and (max-width: 767px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .menu-wrapper a:not(:last-child) {
+    display: none;
+  }
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -12,6 +19,11 @@
   p {
     font-size: 14px !important;
     line-height: 14px !important;
+  }
+
+  .container {
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
   .menu-wrapper a:not(:last-child) {
@@ -42,6 +54,11 @@
     line-height: 16px !important;
   }
 
+  .container {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
   .navbar a:last-child {
     display: none;
   }
@@ -60,6 +77,11 @@
 }
 /* large desktops and up ———– */
 @media screen and (min-width: 1200px) {
+  .container {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
   .navbar a:last-child {
     display: none;
   }

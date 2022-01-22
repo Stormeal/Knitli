@@ -1,8 +1,39 @@
 /* Extra small devices (phones, up to 480px) */
 @media screen and (max-width: 767px) {
+  body {
+    overflow: hidden;
+  }
+  h1 {
+    margin: 0 !important;
+    font-size: 30px !important;
+    line-height: 22px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+    line-height: 14px !important;
+  }
+
+  .header-text {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-button {
+    width: 100% !important;
+  }
+
+  .wrapper-right {
+    width: 100% !important;
+  }
+
+  .mobile {
+    width: 100%;
+  }
+
   .container {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
   }
   .menu-wrapper a:not(:last-child) {
     display: none;

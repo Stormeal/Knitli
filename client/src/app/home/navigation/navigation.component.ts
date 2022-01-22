@@ -30,7 +30,6 @@ export class NavigationComponent implements OnInit {
     $event.stopPropagation();
     this.menuHidden = !this.menuHidden;
     this.changeIcon();
-    console.log('Menu: ', this.menuHidden);
   }
 
   changeIcon() {

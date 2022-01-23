@@ -21,6 +21,7 @@ import { HeaderComponent } from './home/header/header.component';
 import { BoxesComponent } from './home/boxes/boxes.component';
 import { NavigationComponent } from './home/navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
+import { FeaturesComponent } from './features/features.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { AboutComponent } from './about/about.component';
     BoxesComponent,
     NavigationComponent,
     AboutComponent,
+    FeaturesComponent,
   ],
   imports: [
     BrowserModule,

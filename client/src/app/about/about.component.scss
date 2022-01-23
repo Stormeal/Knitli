@@ -5,11 +5,8 @@ h1 {
   font-size: 40px;
 }
 
-.wrapper {
-  padding-bottom: 70px;
-}
 .about-wrapper {
-  height: 80vh;
+  min-height: 80vh;
   background-image: url("../../assets/img/gray-bg.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;

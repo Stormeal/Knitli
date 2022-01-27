@@ -10,6 +10,7 @@ export class NavigationComponent implements OnInit {
   sticky: boolean = true;
   menuHidden: boolean = false;
   faBars = faBars;
+  element = window.document;
 
   @ViewChild('myTarget') myTarget: any;
 
@@ -38,5 +39,13 @@ export class NavigationComponent implements OnInit {
     } else {
       this.faBars = faTimes;
     }
+  }
+
+  ScrollIntoView(element: string) {
+    console.log(element);
+
+    this.element
+      .querySelector(element)
+      ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }

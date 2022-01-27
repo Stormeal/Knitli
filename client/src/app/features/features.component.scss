@@ -32,14 +32,6 @@ p {
   text-align: center;
 }
 
-.row {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  height: 70vh;
-  gap: 10px;
-}
-
 .col-left,
 .col-right {
   flex-grow: 1;
@@ -49,21 +41,45 @@ p {
   flex-grow: 2;
 }
 
-.features-circle {
-  position: relative;
-}
-
-.features-circle .circle-svg {
+.circle-svg {
   position: absolute;
-  top: 50px;
-  left: 0;
-  right: 0;
+  padding-top: 10%;
   z-index: -1;
-  max-width: 100%;
-  margin: 0 auto;
-  background-color: black;
+  height: 100%;
 }
 
-.features-circle svg g {
-  transform-origin: 50%;
+.circle-svg > .circle {
+  height: 389px;
+  animation-name: rotate;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.col-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-box {
+  background-color: blueviolet;
+  text-align: center;
+  height: 100%;
+}
+
+.box{
+  align-self: center;
+}
+
+.feature-box > p {
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-box  > h3 {
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0;
 }

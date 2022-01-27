@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 // MODULES
 import { AppRoutingModule } from './app-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+
 
 // COMPONENTS
 import { AppComponent } from './app.component';
@@ -22,6 +24,7 @@ import { BoxesComponent } from './home/boxes/boxes.component';
 import { NavigationComponent } from './home/navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
 import { FeaturesComponent } from './features/features.component';
+import { ScreenshotsComponent } from './screenshots/screenshots.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,7 @@ import { FeaturesComponent } from './features/features.component';
     NavigationComponent,
     AboutComponent,
     FeaturesComponent,
+    ScreenshotsComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +47,7 @@ import { FeaturesComponent } from './features/features.component';
     MatProgressSpinnerModule,
     MatToolbarModule,
     MatButtonModule,
+    NgxPageScrollCoreModule.forRoot()
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: NetworkInterceptor, multi: true },

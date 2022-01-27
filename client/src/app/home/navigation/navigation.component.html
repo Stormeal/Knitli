@@ -13,13 +13,13 @@
           </div>
         </div>
         <div class="menu-wrapper" #myTarget>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Features</a>
-          <a href="#">Screenshots</a>
-          <a href="#">Team</a>
-          <a href="#">News</a>
-          <a href="#">Contact</a>
+          <a (click)="ScrollIntoView('#home')" id="home">Home</a>
+          <a (click)="ScrollIntoView('#about')" id="about">About</a>
+          <a pageScroll href="#features" id="features">Features</a>
+          <a (click)="ScrollIntoView('#screenshots')" id="screenshots">Screenshots</a>
+          <a (click)="ScrollIntoView('#team')" id="team">Team</a>
+          <a (click)="ScrollIntoView('#news')" id="news">News</a>
+          <a (click)="ScrollIntoView('#contact')" id="contact">Contact</a>
           <a>
             <fa-icon
               [icon]="faBars"

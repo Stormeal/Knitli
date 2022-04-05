@@ -13,6 +13,7 @@ jobs:
           path: "Knitli/client"
       - uses: actions/setup-node@v3.0.0
         with:
+          path: "Knitli/client"
           node-version: 12
       - run: npm ci
       - run: npm run serve

@@ -16,8 +16,5 @@ jobs:
         with:
           node-version: 12
       - run: npm install
-        working-directory: ./client
-      
-      - run: npm run serve
-        working-directory: ./client
+      - run: npm start
       

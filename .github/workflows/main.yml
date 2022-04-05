@@ -7,10 +7,11 @@ on:
 jobs:
   test_pull_request:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./client
     steps:
       - uses: actions/checkout@master
-        with:
-          path: "Knitli/client"
       - uses: actions/setup-node@master
         with:
           path: "Knitli/client"

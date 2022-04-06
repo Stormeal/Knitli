@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "cy": "cypress open",
+    "cy:headless": "cypress run --headless",
     "test": "ng test"
   },
   "private": true,

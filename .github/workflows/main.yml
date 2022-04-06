@@ -14,9 +14,9 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
       - run: npm install
+      - run: npm start
 
       - uses: cypress-io/github-action@master
         with:
-          build: ng build
-          start: npm start
+          start: npm run cy:headless
 

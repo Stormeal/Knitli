@@ -1,7 +1,7 @@
-name: Vue Continous Integration 2
+name: Vue Continous Integration 
 
 on: 
-  pull_request:
+  push:
     branches: [developer]
 
 jobs:
@@ -12,8 +12,9 @@ jobs:
         working-directory: ./client
     steps:
       - name: Checkout
-      - uses: actions/checkout@master
+        uses: actions/checkout@master
       - uses: actions/setup-node@master
-      - uses: cypress-io/github-action@2.9.7
+      - name: Cypress.io
+        uses: cypress-io/github-action@2.9.7
       - run: npm install
       - run: npm start

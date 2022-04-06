@@ -14,7 +14,6 @@ jobs:
       - name: Checkout
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
-      - name: 'UI Tests - Headless'
-        uses: cypress-io/github-action@2.9.7
+      - uses: cypress-io/github-action@2.9.7
       - run: npm install
       - run: npm start

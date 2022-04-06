@@ -2,7 +2,7 @@ name: Vue Continous Integration
 
 on: 
   pull_request:
-    branches: [developer]
+    branches: [master]
 
 jobs:
   test_pull_request:
@@ -13,7 +13,5 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
-        with:
-          node-version: 12
       - run: npm install
       - run: npm start

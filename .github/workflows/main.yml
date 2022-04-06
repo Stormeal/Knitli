@@ -22,5 +22,7 @@ jobs:
         uses: cypress-io/github-action@master
         with:
           working-directory: ./client
+          headless: true
+          wait-on: 'http://localhost:4200'
           start: npm start
 

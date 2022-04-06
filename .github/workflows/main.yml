@@ -2,15 +2,20 @@ name: Vue Continous Integration
 
 on: 
   pull_request:
-    branches: [developer]
+    branches: [master]
 
 jobs:
   test_pull_request:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./client
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3.0.0
-        with:
-          node-version: 12
-      - run: npm ci
-      - run: npm run serve
+      - name: Checkout
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+      - name: 'UI Tests - Headless'
+        uses: cypress-io/github-action@2.9.7
+      - run: npm install
+      - run: npm start
+      - run: npm run cy:headless

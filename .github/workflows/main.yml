@@ -1,4 +1,4 @@
-name: Vue Continous Integration
+name: Vue Continous Integration 2
 
 on: 
   pull_request:

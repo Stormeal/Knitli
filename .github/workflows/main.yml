@@ -13,6 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
-      - uses: cypress-io/github-action@2.9.7
+      - uses: cypress-io/github-action@master
       - run: npm install
       - run: npm start

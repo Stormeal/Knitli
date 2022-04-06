@@ -14,7 +14,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - uses: actions/setup-node@master
+
       - name: Cypress.io
         uses: cypress-io/github-action@2.9.7
+
       - run: npm install
-      - run: npm start
+      - name: Cupress.io
+        uses: cypress-io/github-action@master
+        with:
+          start: ng serve
+

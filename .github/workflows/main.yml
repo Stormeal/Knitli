@@ -12,11 +12,11 @@ jobs:
         working-directory: ./client
     steps:
       - name: Checkout
-      - uses: actions/checkout@master
+        uses: actions/checkout@master
       - uses: actions/setup-node@master
       - run: npm install
       - name: Cupress.io
-      - uses: cypress-io/github-action@master
+        uses: cypress-io/github-action@master
         with:
           start: ng serve
 

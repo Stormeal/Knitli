@@ -16,22 +16,22 @@ describe("Page Load", () => {
   });
 });
 
-describe("Header", () => {
-  beforeEach(() => {
-    cy.visit(baseUrl);
-  });
-  it("gets navigation bar", () => {
-    cy.get("header").should("have.class", "knitli-headers");
-    cy.get("[id^=knitli_menu]");
-  }),
-    it("checks each link in header", () => {
-      cy.get("div").should("have.class", "menu-wrapper");
-      cy.get("[id^=home");
-      cy.get("[id^=about");
-      cy.get("[id^=features");
-      cy.get("[id^=screenshots");
-      cy.get("[id^=team");
-      cy.get("[id^=news");
-      cy.get("[id^=contact");
-    });
-});
+// describe("Header", () => {
+//   beforeEach(() => {
+//     cy.visit(baseUrl);
+//   });
+//   it("gets navigation bar", () => {
+//     cy.get("header").should("have.class", "knitli-headers");
+//     cy.get("[id^=knitli_menu]");
+//   }),
+//     it("checks each link in header", () => {
+//       cy.get("div").should("have.class", "menu-wrapper");
+//       cy.get("[id^=home");
+//       cy.get("[id^=about");
+//       cy.get("[id^=features");
+//       cy.get("[id^=screenshots");
+//       cy.get("[id^=team");
+//       cy.get("[id^=news");
+//       cy.get("[id^=contact");
+//     });
+// });

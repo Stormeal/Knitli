@@ -19,5 +19,6 @@ jobs:
       - name: Cupress.io
         uses: cypress-io/github-action@master
         with:
+          Path: ./client
           start: ng serve
 

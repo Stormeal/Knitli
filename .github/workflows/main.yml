@@ -2,7 +2,7 @@ name: Vue Continous Integration 2
 
 on: 
   pull_request:
-    branches: [master]
+    branches: [developer]
 
 jobs:
   test_pull_request:

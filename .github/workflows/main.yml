@@ -5,7 +5,7 @@ on:
     branches: [developer]
 
 jobs:
-  test_pull_request:
+  Frontend_Test:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -18,7 +18,7 @@ jobs:
       - name: Installing dependencies
         run: npm install
       
-      - name: Cupress.io
+      - name: Executing Cypress Tests
         uses: cypress-io/github-action@master
         with:
           working-directory: ./client

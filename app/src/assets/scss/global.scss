@@ -1,0 +1,11 @@
+$paper-background: #f4f3ef;
+$white: #ffffff;
+$container-background: $white;
+
+body {
+  background-color: $paper-background;
+}
+
+.container {
+  background-color: $container-background;
+}

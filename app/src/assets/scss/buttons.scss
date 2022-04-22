@@ -1,0 +1,34 @@
+@import "./colors.scss";
+
+.btn {
+  display: flex;
+  text-transform: uppercase;
+  border-radius: 3px;
+  color: $white;
+  padding: 11px 15px;
+  transition: all 150ms linear;
+  background-color: $btn-default;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-size: 0.7371em;
+  border-width: 2px;
+  line-height: 1.35em;
+  border: none;
+
+  &.btn-primary {
+    background-color: $btn-primary;
+  }
+  &.btn-info {
+    background-color: $btn-info;
+  }
+  &.btn-success {
+    background-color: $btn-success;
+  }
+  &.btn-warning {
+    background-color: $btn-warning;
+  }
+  &.btn-danger {
+    background-color: $btn-danger;
+  }
+}

@@ -1,11 +1,25 @@
-$paper-background: #f4f3ef;
-$white: #ffffff;
-$container-background: $white;
+@import "./colors.scss";
+@import "./cards.scss";
+@import "./buttons.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 body {
   background-color: $paper-background;
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  margin: 30px;
 }
 
 .container {
   background-color: $container-background;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px -4px rgb(0 0 0 / 15%);
+  object-fit: contain;
+}
+
+.no-shadow {
+  box-shadow: 0;
 }

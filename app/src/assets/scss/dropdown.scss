@@ -1,0 +1,49 @@
+@import "./colors.scss";
+
+.dropdown-container {
+  padding-top: 10px;
+  display: flex;
+  gap: 15px;
+  justify-content: left;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-title {
+  color: $white;
+  font-size: 0.9rem;
+  line-height: 30px;
+}
+
+.dropdown-img {
+  height: 34px;
+}
+
+.dropdown-chevron {
+  color: $white;
+  margin-left: auto;
+}
+.dropdown-item {
+  padding-top: 15px;
+  flex-grow: 2;
+  display: flex;
+  gap: 15px;
+  font-size: 0.8rem;
+  color: $white;
+  cursor: pointer;
+}
+.dropdown-item-icon {
+  min-width: 24px;
+  color: $text-gray;
+}
+
+.spanner {
+  content: "";
+  position: relative;
+  bottom: 0;
+  top: 1em;
+  width: calc(100% - 10px);
+  height: 1px;
+  background: $white;
+  opacity: 50%;
+}

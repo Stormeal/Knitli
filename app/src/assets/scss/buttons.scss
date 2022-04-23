@@ -31,4 +31,93 @@
   &.btn-danger {
     background-color: $btn-danger;
   }
+  &.btn-sm {
+    padding: 5px 7px;
+    line-height: 1em;
+    height: 60%;
+  }
+  &.btn-lg {
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 15px 48px;
+  }
+  &.btn-round {
+    border-width: 1px;
+    border-radius: 30px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  &.btn-icon {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    line-height: normal;
+    height: 2.375rem;
+    width: 2.375rem;
+    position: relative;
+    font-size: 0.9375rem;
+    overflow: hidden;
+    min-width: 2.375rem;
+  }
+
+  &.btn-outline {
+    background: 0 0;
+    color: $btn-default;
+    border: 2px solid $btn-default;
+    opacity: 1;
+  }
+  &.btn-outline-primary {
+    background: 0 0;
+    color: $btn-primary;
+    border: 2px solid $btn-primary;
+    opacity: 1;
+  }
+  &.btn-outline-info {
+    background: 0 0;
+    color: $btn-info;
+    border: 2px solid $btn-info;
+    opacity: 1;
+  }
+  &.btn-outline-success {
+    background: 0 0;
+    color: $btn-success;
+    border: 2px solid $btn-success;
+    opacity: 1;
+  }
+  &.btn-outline-warning {
+    background: 0 0;
+    color: $btn-warning;
+    border: 2px solid $btn-warning;
+    opacity: 1;
+  }
+  &.btn-outline-danger {
+    background: 0 0;
+    color: $btn-danger;
+    border: 2px solid $btn-danger;
+    opacity: 1;
+  }
+  &.btn-outline-danger:hover {
+    background-color: $btn-danger;
+    color: $white;
+  }
+  &.btn-outline-warning:hover {
+    background-color: $btn-warning;
+    color: $white;
+  }
+  &.btn-outline-success:hover {
+    background-color: $btn-success;
+    color: $white;
+  }
+  &.btn-outline-info:hover {
+    background-color: $btn-info;
+    color: $white;
+  }
+  &.btn-outline-primary:hover {
+    background-color: $btn-primary;
+    color: $white;
+  }
+  &.btn-outline:hover {
+    background-color: $btn-default;
+    color: $white;
+  }
 }

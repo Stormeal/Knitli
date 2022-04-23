@@ -59,6 +59,14 @@
     overflow: hidden;
     min-width: 2.375rem;
   }
+  &.btn-link {
+    background: 0 0;
+    color: $btn-primary;
+  }
+  &.btn-link:hover {
+    background-color: $btn-primary;
+    color: $white;
+  }
 
   &.btn-outline {
     background: 0 0;
@@ -120,4 +128,17 @@
     background-color: $btn-default;
     color: $white;
   }
+}
+.btn-group {
+  display: flex;
+}
+.btn-group-item:first-child {
+  border-right: 0px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-group-item:last-child {
+  border-left: 0px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }

@@ -1,0 +1,44 @@
+@import "./colors.scss";
+
+.logo {
+  max-width: 34px;
+  max-height: 34px;
+}
+
+.logo-text {
+  text-transform: uppercase;
+  color: $white;
+  font-weight: 600;
+  line-height: 30px;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+.sidebar {
+  position: fixed;
+  display: block;
+  top: 0;
+  bottom: 0;
+  width: 260px;
+  left: 0;
+  z-index: 999;
+  background-color: $sidebar-color;
+}
+
+.sidebar-logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+}
+.sidebar-logo::after {
+  content: "";
+  position: absolute;
+  top: 8%;
+  width: 200px;
+  height: 1px;
+  margin-top: -1px;
+  background: $white;
+}
+.sidebar-content {
+  padding: 15px 25px;
+}

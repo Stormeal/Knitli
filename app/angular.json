@@ -18,7 +18,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "Knitli",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -110,5 +110,5 @@
       }
     }
   },
-  "defaultProject": "App"
+  "defaultProject": "Knitli"
 }

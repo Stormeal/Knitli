@@ -9,6 +9,13 @@ import { SidebarComponent } from './layouts/sidebar/sidebar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { HeaderComponent } from './layouts/header/header.component';
+import { HomeComponent } from './pages/home/home.component';
+import { UserPageComponent } from './pages/user-page/user-page.component';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { MainPanelComponent } from './layouts/main-panel/main-panel.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +24,14 @@ import { HeaderComponent } from './layouts/header/header.component';
     CardComponent,
     SidebarComponent,
     DropdownComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    UserPageComponent,
+    SettingsComponent,
+    LoginComponent,
+    RegisterComponent,
+    PageNotFoundComponent,
+    MainPanelComponent
   ],
   imports: [
     BrowserModule,

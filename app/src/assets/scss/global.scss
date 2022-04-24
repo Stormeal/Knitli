@@ -10,6 +10,12 @@ body {
   background-color: $paper-background;
   font-family: "Lato", sans-serif;
 }
+.pt-4 {
+  padding-top: 25px;
+}
+.pt-5 {
+  padding-top: 35px;
+}
 
 .wrapper {
   margin: 30px;
@@ -24,6 +30,7 @@ body {
 }
 
 .container {
+  padding: 15px;
   background-color: $container-background;
   margin-bottom: 15px;
   border-radius: 10px;

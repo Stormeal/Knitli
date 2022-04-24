@@ -29,6 +29,7 @@
   justify-content: left;
   align-items: center;
   gap: 15px;
+  cursor: pointer;
 }
 .sidebar-logo::after {
   content: "";
@@ -44,10 +45,8 @@
 .sidebar-content {
   padding: 15px 25px;
 }
-
 .menu-item {
   padding-left: 5px;
-  padding-top: 35px;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -56,14 +55,23 @@
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
 }
+.pages:first-child {
+  padding-top: 35px;
+}
 .menu-item:hover {
   opacity: 85%;
 }
-
+.icon {
+  max-width: 24px;
+}
 .menu-icon {
   font-size: 24px;
 }
 .menu-title {
   font-size: 1rem;
   line-height: 30px;
+}
+.menu-caret {
+  font-size: small;
+  margin-left: auto;
 }

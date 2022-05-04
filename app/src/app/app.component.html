@@ -1,5 +1,14 @@
-<app-sidebar></app-sidebar>
-<div class="main-panel">
-  <app-header></app-header>
-  <router-outlet></router-outlet>
-</div>
+
+
+<ng-container *ngIf="this.authenticated else notAuthenticated">
+  <app-sidebar></app-sidebar>
+  <div class="main-panel">
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+  </div>
+</ng-container>
+
+<ng-template #notAuthenticated>
+  <Knitli-login></Knitli-login>
+</ng-template>
+

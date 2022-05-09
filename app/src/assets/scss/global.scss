@@ -4,6 +4,7 @@
 @import "./sidebar.scss";
 @import "./dropdown.scss";
 @import "./header.scss";
+@import "./input-fields.scss";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 body {
@@ -27,6 +28,10 @@ body {
   width: calc(100% - 260px);
   background-color: #f4f3ef;
   transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+}
+
+.main-container {
+  border-top: 1px solid #ddd;
 }
 
 .container {

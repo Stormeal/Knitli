@@ -16,6 +16,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { MainPanelComponent } from './layouts/main-panel/main-panel.component';
+import { InputFieldComponent } from './components/input-field/input-field.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MainPanelComponent } from './layouts/main-panel/main-panel.component';
     LoginComponent,
     RegisterComponent,
     PageNotFoundComponent,
-    MainPanelComponent
+    MainPanelComponent,
+    InputFieldComponent
   ],
   imports: [
     BrowserModule,

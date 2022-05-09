@@ -1,2 +1,57 @@
 <div class="login-container">
+  <div class="overlay items-center">
+    <app-header>
+      <div title class="header-container pt-10 px-20">
+        <h2 class="text-2xl font-semibold text-white text-start">Knitli</h2>
+      </div>
+      <div class="menu-container pt-10 flex gap-0" menu>
+        <div class="dropdown-item" routerLink="/user-page">
+          <span class="dropdown-item-icon">
+            <i class="fa-solid fa-house"></i>
+          </span>
+          <span class="dropdown-item-title">Dashboard</span>
+        </div>
+
+        <div class="dropdown-item" routerLink="/user-page">
+          <span class="dropdown-item-icon">
+            <i class="fa-solid fa-receipt"></i>
+          </span>
+          <span class="dropdown-item-title">Register</span>
+        </div>
+
+        <div class="dropdown-item" routerLink="/user-page">
+          <span class="dropdown-item-icon">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          </span>
+          <span class="dropdown-item-title">Login</span>
+        </div>
+      </div>
+    </app-header>
+
+    <div class="wrapper flex justify-center items-center">
+      <section class="loginform-wrapper gap-y-96 mt-20 mb-20">
+        <div class="container flex flex-col">
+          <h2 class="text-3xl font-extrabold tracking-wider p-6 text-center">
+            Login
+          </h2>
+          <div class="input-fields pb-6">
+            <div class="mx-8 py-2">
+              <knit-input-field [inputName]="'Username'">
+                <i icon class="fa-solid fa-user"></i>
+              </knit-input-field>
+            </div>
+            <div class="mx-8">
+              <knit-input-field [inputName]="'Password'" [inputType]="'password'">
+                <i icon class="fa-solid fa-lock"></i>
+              </knit-input-field>
+            </div>
+          </div>
+          <p>Subscribe to newsletter</p>
+          <div>
+            <button class="btn btn-warning">Get started</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 </div>

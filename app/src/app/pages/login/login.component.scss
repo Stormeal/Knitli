@@ -16,3 +16,31 @@ body {
     background-repeat: no-repeat;
 
 }
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.header-container {
+  letter-spacing: .5rem;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-container {
+  width: 50%;
+}
+
+.loginform-wrapper {
+  width: 35%;
+}
+
+.wrapper {
+  height: 50%
+}

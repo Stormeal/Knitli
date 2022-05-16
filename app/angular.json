@@ -1,92 +1,123 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "4f3079f0-fb30-4e1b-973e-45f4f19aabdc"
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "App": {
-      "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        },
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
+    "demo": {
       "root": "",
       "sourceRoot": "src",
-      "prefix": "Knitli",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/App",
+            "outputPath": "dist/demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
+            "tsConfig": "src/tsconfig.app.json",
+            "allowedCommonJsDependencies": [
+              "nouislider",
+              "chartist",
+              "rxjs/add/operator/filter"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
+              "node_modules/angular-calendar/scss/angular-calendar.scss",
+              "node_modules/sweetalert2/src/sweetalert2.scss",
+              "src/assets/css/demo.css",
+              "node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css",
+              "src/assets/scss/material-dashboard.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js",
+              "node_modules/moment/moment.js",
+              "node_modules/arrive/src/arrive.js",
+              "node_modules/hammerjs/hammer.min.js",
+              "node_modules/web-animations-js/web-animations.min.js",
+              "node_modules/chartist/dist/chartist.js",
+              "node_modules/chartist-plugin-zoom/dist/chartist-plugin-zoom.js",
+              "node_modules/twitter-bootstrap-wizard/jquery.bootstrap.wizard.js",
+              "node_modules/bootstrap-notify/bootstrap-notify.js",
+              "node_modules/nouislider/dist/nouislider.min.js",
+              "node_modules/bootstrap-select/dist/js/bootstrap-select.js",
+              "node_modules/datatables/media/js/jquery.dataTables.js",
+              "node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js",
+              "node_modules/datatables.net-responsive/js/dataTables.responsive.js",
+              "node_modules/fullcalendar/dist/fullcalendar.min.js",
+              "node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.js",
+              "node_modules/jasny-bootstrap/dist/js/jasny-bootstrap.min.js",
+              "node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
+              "node_modules/jqvmap/dist/jquery.vmap.min.js",
+              "node_modules/jqvmap/dist/maps/jquery.vmap.world.js",
+              "node_modules/jquery-validation/dist/jquery.validate.min.js"
+            ]
           },
           "configurations": {
             "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
-                }
-              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "outputHashing": "all"
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": false,
+                  "inlineCritical": false
+                },
+                "fonts": true
+              },
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
             },
             "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "vendorChunk": true,
-              "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
+             "buildOptimizer": false,
+             "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": false,
+                  "inlineCritical": true
+                },
+                "fonts": true
+              },
+             "outputHashing": "all",
+           }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "demo:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "demo:build:production"
+            },
+            "development": {
+              "browserTarget": "demo:build:development"
             }
           },
           "defaultConfiguration": "production"
         },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "browserTarget": "App:build:production"
-            },
-            "development": {
-              "browserTarget": "App:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "App:build"
+            "browserTarget": "demo:build"
           }
         },
         "test": {
@@ -94,21 +125,91 @@
           "options": {
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "inlineStyleLanguage": "scss",
+            "tsConfig": "src/tsconfig.spec.json",
+            "karmaConfig": "src/karma.conf.js",
+            "styles": [
+              "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
+              "node_modules/angular-calendar/scss/angular-calendar.scss",
+              "node_modules/sweetalert2/src/sweetalert2.scss",
+              "node_modules/@fullcalendar/common/main.min.css",
+              "src/assets/css/demo.css",
+              "src/assets/scss/material-dashboard.scss"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js",
+              "node_modules/moment/moment.js",
+              "node_modules/arrive/src/arrive.js",
+              "node_modules/hammerjs/hammer.min.js",
+              "node_modules/web-animations-js/web-animations.min.js",
+              "node_modules/chartist/dist/chartist.js",
+              "node_modules/chartist-plugin-zoom/dist/chartist-plugin-zoom.js",
+              "node_modules/twitter-bootstrap-wizard/jquery.bootstrap.wizard.js",
+              "node_modules/bootstrap-notify/bootstrap-notify.js",
+              "node_modules/nouislider/dist/nouislider.min.js",
+              "node_modules/bootstrap-select/dist/js/bootstrap-select.js",
+              "node_modules/datatables/media/js/jquery.dataTables.js",
+              "node_modules/datatables.net-bs/js/dataTables.bootstrap.js",
+              "node_modules/datatables.net-responsive/js/dataTables.responsive.js",
+              "node_modules/fullcalendar/dist/fullcalendar.min.js",
+              "node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.js",
+              "node_modules/jasny-bootstrap/dist/js/jasny-bootstrap.min.js",
+              "node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
+              "node_modules/jqvmap/dist/jquery.vmap.min.js",
+              "node_modules/jqvmap/dist/maps/jquery.vmap.world.js",
+              "node_modules/jquery-validation/dist/jquery.validate.min.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "src/tsconfig.app.json",
+              "src/tsconfig.spec.json"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "demo-e2e": {
+      "root": "e2e/",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "demo:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "demo:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
     }
   },
-  "defaultProject": "Knitli"
+  "defaultProject": "demo",
+  "cli": {
+    "analytics": false
+  }
 }

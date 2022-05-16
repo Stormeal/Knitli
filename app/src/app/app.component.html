@@ -1,13 +1,2 @@
-<ng-container *ngIf="this.authenticated; else notAuthenticated">
-  <app-sidebar></app-sidebar>
-  <div class="main-panel">
-    <app-header></app-header>
-    <div class="main-container">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-</ng-container>
 
-<ng-template #notAuthenticated>
-  <Knitli-login></Knitli-login>
-</ng-template>
+<router-outlet></router-outlet>

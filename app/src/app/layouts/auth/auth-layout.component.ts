@@ -5,6 +5,7 @@ import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-layout',
+  styleUrls: ['./auth-layout.component.scss'],
   templateUrl: './auth-layout.component.html'
 })
 export class AuthLayoutComponent implements OnInit {

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Stormeal\\Source\\Knitli\\api\\api.csproj": {}
+    "C:\\Users\\charl\\OneDrive\\Documents\\GitHub\\Knitli\\api\\api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Stormeal\\Source\\Knitli\\api\\api.csproj": {
+    "C:\\Users\\charl\\OneDrive\\Documents\\GitHub\\Knitli\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Stormeal\\Source\\Knitli\\api\\api.csproj",
+        "projectUniqueName": "C:\\Users\\charl\\OneDrive\\Documents\\GitHub\\Knitli\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "C:\\Users\\Stormeal\\Source\\Knitli\\api\\api.csproj",
-        "packagesPath": "C:\\Users\\Stormeal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Stormeal\\Source\\Knitli\\api\\obj\\",
+        "projectPath": "C:\\Users\\charl\\OneDrive\\Documents\\GitHub\\Knitli\\api\\api.csproj",
+        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\charl\\OneDrive\\Documents\\GitHub\\Knitli\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Stormeal\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -38,6 +38,16 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -61,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

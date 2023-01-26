@@ -18,12 +18,18 @@
       </div>
 
       <div class="actionBtn">
-        <a [routerLink]="['/pages/register']">
-          <i class="material-icons">people</i> Register
-        </a>
+        <div *ngIf="router.url === '/pages/login'; else loginRoute">
+          <a [routerLink]="['/pages/register']">
+            <i class="material-icons">people</i> Register
+          </a>
+        </div>
+        <ng-template #loginRoute>
+          <a [routerLink]="['/pages/login']">
+            <i class="material-icons">people</i> Login
+          </a>
+        </ng-template>
       </div>
     </div>
-
   </div>
 </nav>
 <router-outlet></router-outlet>

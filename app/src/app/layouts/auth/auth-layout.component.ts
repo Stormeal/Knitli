@@ -5,6 +5,7 @@ import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-layout',
+  styleUrls: ['./auth-layout.component.scss'],
   templateUrl: './auth-layout.component.html'
 })
 export class AuthLayoutComponent implements OnInit {
@@ -13,7 +14,7 @@ export class AuthLayoutComponent implements OnInit {
   mobile_menu_visible: any = 0;
   private _router: Subscription;
 
-  constructor(private router: Router, private element: ElementRef) {
+  constructor(public router: Router, private element: ElementRef) {
       this.sidebarVisible = false;
   }
   ngOnInit(){

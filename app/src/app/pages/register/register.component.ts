@@ -10,11 +10,9 @@ export class RegisterComponent implements OnInit, OnDestroy {
     ngOnInit() {
       const body = document.getElementsByTagName('body')[0];
       body.classList.add('register-page');
-      body.classList.add('off-canvas-sidebar');
     }
     ngOnDestroy(){
       const body = document.getElementsByTagName('body')[0];
       body.classList.remove('register-page');
-      body.classList.remove('off-canvas-sidebar');
     }
 }

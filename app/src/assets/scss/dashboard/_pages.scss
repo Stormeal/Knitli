@@ -396,29 +396,7 @@
     }
 }
 
-.off-canvas-sidebar {
-  .navbar-toggler .navbar-toggler-icon{
-    background-color: $white-color !important;
-  }
 
-  .navbar-collapse {
-    .nav {
-        > li > a,
-        > li > a:hover{
-            color: $white-color;
-            margin: 0 15px;
-        }
-
-        > li > a:focus,
-        > li > a:hover{
-            background: rgba(200, 200, 200, 0.2);
-        }
-    }
-    &:after {
-      background-color: #282828;
-    }
-  }
-}
 
 .offline-doc {
   .navbar .navbar-nav {
@@ -428,16 +406,7 @@
   }
 }
 
-@media screen and (max-width: 991px){
-  .off-canvas-sidebar {
-    .page-header {
-      > .container {
-        padding-top: 70px;
-        padding-bottom: 200px;
-      }
-    }
-  }
-}
+
 
 .login-page{
     .footer{

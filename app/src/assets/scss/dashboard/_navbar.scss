@@ -55,26 +55,3 @@
     }
   }
 }
-
-.off-canvas-sidebar{
-  .navbar{
-    .navbar-collapse{
-      .navbar-nav .nav-item{
-        .nav-link{
-          padding-top: 15px;
-          padding-bottom: 15px;
-          font-weight: 500;
-          font-size: 12px;
-          text-transform: uppercase;
-          border-radius: 3px;
-          color: $white-color;
-          margin: 0 15px;
-
-          &:hover{
-            background: rgba(200, 200, 200, 0.2);
-          }
-        }
-      }
-    }
-  }
-}

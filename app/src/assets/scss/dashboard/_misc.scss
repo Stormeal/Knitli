@@ -99,7 +99,6 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 
 .caret,
 .bootstrap-tagsinput .tag,
-.sidebar a,
 .bootstrap-tagsinput [data-role="remove"] {
     @include transition-all($fast-transition-time, $transition-ease-in);
 }

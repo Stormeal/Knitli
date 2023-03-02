@@ -11,11 +11,9 @@ export class PricingComponent implements OnInit, OnDestroy {
     ngOnInit() {
       const body = document.getElementsByTagName('body')[0];
       body.classList.add('pricing-page');
-      body.classList.add('off-canvas-sidebar');
     }
     ngOnDestroy(){
       const body = document.getElementsByTagName('body')[0];
       body.classList.remove('pricing-page');
-      body.classList.remove('off-canvas-sidebar');
     }
 }

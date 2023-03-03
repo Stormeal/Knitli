@@ -1,0 +1,103 @@
+<div class="wrapper wrapper-full-page">
+  <div
+    class="page-header login-page header-filter"
+    filter-color="black"
+    style="
+      background-image: url('./assets/login-background.jpg');
+      background-size: cover;
+      background-position: top center;
+    "
+  >
+    <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6 ml-auto mr-auto">
+          <form class="form" method="" action="">
+            <div class="card card-login">
+              <div class="card-header card-header-rose text-center">
+                <h4 class="card-title">Log in</h4>
+                <div class="social-line">
+                  <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+                    <i class="fa fa-facebook-square"></i>
+                  </a>
+                  <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-description text-center">Or Be Classical</p>
+
+                <span class="bmd-form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="material-icons">email</i>
+                      </span>
+                    </div>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email..."
+                    />
+                  </div>
+                </span>
+                <span class="bmd-form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="material-icons">lock_outline</i>
+                      </span>
+                    </div>
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="Password..."
+                    />
+                  </div>
+                </span>
+              </div>
+              <div class="card-footer justify-content-center">
+                <a href="#pablo" class="btn btn-rose btn-link btn-lg"
+                  >Lets Go</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <nav class="pull-left">
+          <ul>
+            <li>
+              <a href="#"> Two Danes </a>
+            </li>
+            <li>
+              <a href="#"> About Us </a>
+            </li>
+            <li>
+              <a href="#"> Blog </a>
+            </li>
+            <li>
+              <a href="#"> Licenses </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright pull-right">
+          &copy;
+          {{ test | date: "yyyy" }}, made with
+          <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #eb5e28" ></i>
+          by
+          <a href="#" target="_blank"
+            >Two Danes</a
+          >
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
